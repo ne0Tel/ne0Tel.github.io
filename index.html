@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/media.css">
+  <title>Main Page</title>
+</head>
+<body>
+  <div class="_wrapper">
+    <div class="overlay"></div>
+    <div class="modal">
+      <div class="modal-window">
+        <form action="#" method="get" enctype="multipart/form-data" autocomplete="off" class="form-contact__form-questions">
+  
+          <div class="form-contact__row">
+  
+            <div class="form-contact__col">
+              <label class="label-title" for="FIO">Name</label>
+              <input
+                class="label-input"
+                type="text"
+                name="name"
+                id="FIO"
+                placeholder="Input your name"
+                tabindex="1"
+              />
+            </div>
+            <div class="form-contact__col">
+              <label class="label-title" for="ema">Email</label>
+              <input
+                class="label-input"
+                type="emil"
+                name="emil"
+                id="ema"
+                placeholder="Input your email"
+                tabindex="2"
+              />
+            </div>
+          </div>
+  
+          <div class="form-contact__row">
+            <div class="form-contact__col">
+              <label class="label-title" for="special">Speciale Request</label>
+              <textarea class="label-textarea" name="request" id="special" cols="80" rows="8" placeholder="Input your special request"></textarea>
+            </div>
+          </div>
+  
+          <div class="form-contact__row">
+            <div class="form-contact__col">
+              <button id="submit-btn" class="form-contact__btn">Send</button>
+            </div>
+          </div>
+        </form>
+  
+        <button id="delete-modal" class="btn-close">X</button>
+      </div>
+    </div>  
+    <div class="_ibg">
+      <img class="cover" src="../img/Zeezotje-5_1.png" alt="cover" />
+    </div>
+  
+    
+    <header class="header"> 
+      <div class="header__container _container">
+  
+      <a href="#" class="header__logo"> 
+        <img id="logo" src="" alt="Zeezotje">
+      </a>
+  
+      <nav class="header__menu menu">
+        <ul class="menu__list">
+          <li><a href="#" class="menu__link">À la carte</a></li>
+          <li><a href="#" class="menu__link">Wijnkaart</a></li>
+          <li><a href="#" class="menu__link">Lunchmenu</a></li>
+          <li><a href="#" class="menu__link">Contact</a></li>
+        </ul>
+      </nav>
+  
+      <div class="header__phone phone">
+        <img src="../img/header/phone.svg" alt="Zeezotje phone" class="phone__logo">
+        <div class="phone__number">+32 9 282 57 25</div>
+      </div>
+      
+      <div id="open-burger" class="menu-burge">
+        <nav class="nav-menu-burger">
+          <ul class="nav-menu-b">
+            <li><a href="#">Наши проекты</a></li>
+            <li><a href="#">Материал</a></li>
+            <li><a href="#">О компании</a></li>
+            <li><a href="#">Этапы работ</a></li>
+            <li><a href="#">Наше производство</a></li>
+            <li><a href="#">Вопросы и ответы</a></li>
+            <li><a href="#">Отзывы</a></li>
+            <li><a href="#">8 (777) 405 - 77 - 59</a></li>
+          </ul>
+          <button id="delete-burger" class="btn-close">X</button>
+        </nav>
+      </div>
+      </div>
+    </header>
+  
+    <main class="main">
+  
+      <section class="main__section-1 intro">
+          <div class="intro__container _container">
+  
+            <div class="intro__body">
+  
+              <div class="intro__subtitle">OPEN EVERYDAY 6AM - 9PM</div>
+              <div class="intro__title">A bad day with lunch is better than a good day without it.</div>
+              
+              <div class="intro__buttons">
+                <a href="#" id="open-modal" class="intro__button">Reserve a table</a>
+  
+                <div class="intro__group-buttons btn-circle">
+                  <a href="#" class="btn-circle__button">Fb</a>
+                  <a href="#" class="btn-circle__button">Lg</a>
+                  <a href="#" class="btn-circle__button">Tw</a>
+                  <a href="#" class="btn-circle__button">Yt</a>
+                </div>
+              </div>
+
+              <div class="img-befor-cover"></div>
+            </div>
+          </div>
+      </section>
+  
+      <section class="main__section-2 rooms">
+        <div class="rooms__container _container">
+  
+          <div class="rooms__body">
+            <div class="rooms__list">
+  
+              <div class="rooms__item">
+                <div class="rooms__title">Woensdag 12/01</div>
+                <div class="rooms__subitems">
+                  <div class="rooms__subtitle">Salade met Serrano</div>
+                  <span class="cricle"></span>
+                  <span class="cricle"></span>
+                  <span class="cricle"></span>
+                  <div class="rooms__subtitle">Steak Tartaar</div>
+                </div>
+              </div>
+              <div class="rooms__item">
+                <div class="rooms__title">Donderdag 13/01</div>
+                <div class="rooms__subitems">
+                  <div class="rooms__subtitle">Toast Roquefort</div>
+                  <span class="cricle"></span>
+                  <span class="cricle"></span>
+                  <span class="cricle"></span>
+                  <div class="rooms__subtitle">Penne met Kip en Prei</div>
+                </div>
+              </div>
+              <div class="rooms__item">
+                <div class="rooms__title">Vrijdag 14/01</div>
+                <div class="rooms__subitems">
+                  <div class="rooms__subtitle">Verrassing van de Chef</div>
+                  <span class="cricle"></span>
+                  <span class="cricle"></span>
+                  <span class="cricle"></span>
+                  <div class="rooms__subtitle">Penne met Kip en Prei</div>
+                </div>
+              </div>
+              <div class="rooms__item">
+                <div class="rooms__title">Vrijdag 15/01</div>
+                <div class="rooms__subitems">
+                  <div class="rooms__subtitle">Verrassing van de Chef</div>
+                  <span class="cricle"></span>
+                  <span class="cricle"></span>
+                  <span class="cricle"></span>
+                  <div class="rooms__subtitle">Penne met Kip en Prei</div>
+                </div>
+              </div>
+              <div class="rooms__item">
+                <div class="rooms__title">Vrijdag 16/01</div>
+                <div class="rooms__subitems">
+                  <div class="rooms__subtitle">Verrassing van de Chef</div>
+                  <span class="cricle"></span>
+                  <span class="cricle"></span>
+                  <span class="cricle"></span>
+                  <div class="rooms__subtitle">Penne met Kip en Prei</div>
+                </div>
+              </div>
+              
+              
+  
+            </div>
+            <div class="rooms__imgs block-img">
+              <img src="../img/rooms/bott.png" alt="restran" class="block-img__img-1">
+              <span class="frame"></span>
+              <img src="../img/rooms/top.png" alt="interesting place" class="block-img__img-2">
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <section class="main-section-3 slaider">
+        <div class="slaider__container _container">
+
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><div class="slaider__body">
+                <img src="../img/slaider/“.png" alt="ALAIN HEYNDRICKX" class="slaider__quotes">
+                <h1 class="slaider__title">Goede service, lekker eten, toffe ambiance</h1>
+                <h3 class="slaider__subtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo  dolores et ea rebum. Stet clita kasd gubergren.
+                </h3>
+                <h1 class="slaider__name">ALAIN HEYNDRICKX</h1>
+              </div></div>
+              <div class="swiper-slide"><div class="slaider__body">
+                <img src="../img/slaider/“.png" alt="ALAIN HEYNDRICKX" class="slaider__quotes">
+                <h1 class="slaider__title">Goede service, lekker eten, toffe ambiance</h1>
+                <h3 class="slaider__subtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo  dolores et ea rebum. Stet clita kasd gubergren.
+                </h3>
+                <h1 class="slaider__name">ALAIN HEYNDRICKX</h1>
+              </div></div>
+              <div class="swiper-slide"><div class="slaider__body">
+                <img src="../img/slaider/“.png" alt="ALAIN HEYNDRICKX" class="slaider__quotes">
+                <h1 class="slaider__title">Goede service, lekker eten, toffe ambiance</h1>
+                <h3 class="slaider__subtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo  dolores et ea rebum. Stet clita kasd gubergren.
+                </h3>
+                <h1 class="slaider__name">ALAIN HEYNDRICKX</h1>
+              </div>
+            </div>
+            </div>
+  
+            <div class="swiper-button-prev"><img src="../img/slaider/arrow-up.svg" class="slaider__arrow-left" alt=""></div>
+            <div class="swiper-button-next"><img src="../img/slaider/arrow-down.svg" class="slaider__arrow-right" alt=""></div>
+          
+          </div>
+        </div>
+      </section>
+  
+      <section class="main-section-4 dignity">
+        <div class="dignity__container _container">
+          <div class="dignity__body">
+  
+            <div class="dignity__item">
+              <div class="general-text">
+                <h1 class="general-text__title">LEKKER ETEN</h1>
+                <h3 class="general-text_subtitle">Eten gaat niet over indruk maken op mensen. Het gaat erom dat ze zich op hun gemak voelen. Dat is onze filosofie, goed eten in een goede sfeer.</h3>
+              </div>
+              <img src="../img/dignity/meat.png" alt="LEKKER ETEN" class="dignity__img">
+            </div>
+  
+            <div class="dignity__item">
+              <img src="../img/dignity/beer.png" alt="TOFFE AMBIANCE" class="dignity__img">
+              <div class="general-text">
+                <h1 class="general-text__title">TOFFE AMBIANCE</h1>
+                <h3 class="general-text_subtitle">Het creëren van de juiste sfeer is zeer belangrijk voor ons. We nemen onze tijd om te zorgen dat alle elementen bijdragen aan de juiste setting.</h3>
+              </div>
+            </div>
+  
+            <div class="dignity__item">
+              <div class="general-text">
+                <h1 class="general-text__title">LEKKERE COCKTAILS</h1>
+                <h3 class="general-text_subtitle">Ons doel is simpel: een gastvrije plek bieden waar u kunt genieten van een onvergetelijke cocktail, een goed gesprek en lekker eten.</h3>
+              </div>
+              <img src="../img/dignity/coctail.png" alt="LEKKERE COCKTAILS" class="dignity__img">
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <section class="main-section-5 sfeerfoto">
+        <div class="sfeerfoto__container">
+          <div class="sfeerfoto__body _container sfeerfoto-item">
+            <div class="sfeerfoto-item__top sfeerfoto-subitem">
+  
+              <div class="sfeerfoto-subitem__left">
+                <h1 class="sfeerfoto-subitem__title">Sfeerfoto's</h1>
+                <h3 class="sfeerfoto-subitem__subtitle">De beste manier om de sfeer te ervaren is eens langskomen.
+                  In tussentijd hebben we hier alvast wat foto’s voor je klaar.</h3>
+              </div>
+  
+              <div class="sfeerfoto-subitem__rigth">
+                <a href="#">
+                  <img src="../img/sfferfoto/arrow-up.svg" alt="sfeerfoto" class="sfeerfoto-subitem__arow-left">
+                </a>
+                <a href="#">
+                  <img src="../img/sfferfoto/arrow-down.svg" alt="sfeerfoto" class="sfeerfoto-subitem__arow-rigth">
+                </a>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+        <div class="sfeerfoto-item__bottom sfeerfoto-img">
+          <img src="../img/sfferfoto/'t Zeezotje-3 1.png" alt="" class="sfeerfoto-img__1">
+          <img src="../img/sfferfoto/'t Zeezotje-4 1.png" alt="" class="sfeerfoto-img__2">
+          <img src="../img/sfferfoto/'t Zeezotje-6 1.png" alt="" class="sfeerfoto-img__3">
+        </div>
+      </section>
+  
+      <section class="main-section-6 contacts">
+        <div class="contacts__container _container">
+          <div class="contacts__body">
+  
+            <div class="contacts__top-content">
+              <div class="contacts__contact contact">
+  
+                <h1 class="contact__title">Contacts</h1>
+  
+                <div class="contact__item">
+                  <img src="../img/contacts/Group 3388.svg" alt="" class="contact-img">
+  
+                  <div class="contact__item-left">
+                    <h3 class="contact__subtitle">Phone Number</h3>
+                    <div class="contact__text">+32 9 282 57 25</div>
+                  </div>
+                </div>
+  
+                <div class="contact__item">
+                  <img src="../img/contacts/Group 36.svg" alt="" class="contact-img">
+  
+                  <div class="contact__item-left">
+                    <h3 class="contact__subtitle">Email</h3>
+                    <div class="contact__text">info@email.com</div>
+                  </div>
+                </div>
+  
+                <div class="contact__item">
+                  <img src="../img/contacts/Group 42.svg" alt="" class="contact-img">
+  
+                  <div class="contact__item-left">
+                    <h3 class="contact__subtitle">Opening Hours</h3>
+                    <div class="contact__text">Everyday from 6 AM - 9 PM</div>
+                  </div>
+                </div>
+  
+                <div class="contact__item">
+                  <img src="../img/contacts/Group 45.svg" alt="" class="contact-img">
+  
+                  <div class="contact__item-left">
+                    <h3 class="contact__subtitle">Map Street</h3>
+                    <div class="contact__text">Jl. Raya Surabaya 2787</div>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="contacts__form form-contact">
+  
+                <h1 class="form-contact-title">Have any questions?</h1>
+                <form action="#" method="get" enctype="multipart/form-data" autocomplete="off" class="form-contact__form-questions">
+  
+                  <div class="form-contact__row">
+  
+                    <div class="form-contact__col">
+                      <label class="label-title" for="FIO">Name</label>
+                      <input
+                        class="label-input"
+                        type="text"
+                        name="name"
+                        id="FIO"
+                        placeholder="Input your name"
+                        tabindex="1"
+                      />
+                    </div>
+                    <div class="form-contact__col">
+                      <label class="label-title" for="ema">Email</label>
+                      <input
+                        class="label-input"
+                        type="emil"
+                        name="emil"
+                        id="ema"
+                        placeholder="Input your email"
+                        tabindex="2"
+                      />
+                    </div>
+                  </div>
+  
+                  <div class="form-contact__row">
+                    <div class="form-contact__col">
+                      <label class="label-title" for="special">Speciale Request</label>
+                      <textarea class="label-textarea" name="request" id="special" cols="80" rows="8" placeholder="Input your special request"></textarea>
+                    </div>
+                  </div>
+  
+                  <div class="form-contact__row">
+                    <div class="form-contact__col">
+                      <button class="form-contact__btn">Send</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+  
+            <div class="contacts__bottom">
+              <div class="contacts__map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1990.6838536890161!2d30.323429976780766!3d60.070039651512054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e31671f8b6b5f3%3A0x57598ab16652f243!2sHello%2C%20brand*21!5e0!3m2!1sru!2sru!4v1690871139524!5m2!1sru!2sru" width="1170" height="547" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+  
+              <div class="contacts__footer">
+                <img src="../img/contacts/NAAM 2.png" alt="Zeezotje" class="contacts__logo">
+                <div class="contacts__group-buttons btn-circle">
+                  <a href="#" class="btn-circle__button btn-circle__button_black">Fb</a>
+                  <a href="#" class="btn-circle__button btn-circle__button_black">Lg</a>
+                  <a href="#" class="btn-circle__button btn-circle__button_black">Tw</a>
+                  <a href="#" class="btn-circle__button btn-circle__button_black">Yt</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="/js/modal_and_burger.js"></script>
+  <script src="/js/slider.js"></script>
+  <script src="/js/img.js"></script>
+</body>
+</html>
