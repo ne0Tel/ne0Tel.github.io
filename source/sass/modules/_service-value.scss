@@ -1,0 +1,21 @@
+._container {
+    max-width: 1680px;
+    margin: 0px auto;
+    padding: 0px 120px;
+    box-sizing: content-box;
+  }
+  
+  ._wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  
+    img {
+      font-size: 10px;
+    }
+  }
+
+.de_container {
+  max-width: 100%;
+}

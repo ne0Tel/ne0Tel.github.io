@@ -1,0 +1,56 @@
+@font-face {
+  font-family: "Inter";
+  src: url('../../fonts/Inter-Regular.ttf');
+  src: url('../../fonts/Inter-Bold.ttf');
+  src: url('../../fonts/Inter-Black.ttf');
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+img {
+  vertical-align: top;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+button {
+  background-color: rgba($color: #000000, $alpha: 0);
+}
+
+html,
+body {
+  height: 100%;
+  background: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0px;
+  color: #000000;
+  box-sizing: border-box;
+}

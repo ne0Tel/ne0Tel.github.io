@@ -1,0 +1,654 @@
+@use './modules/mix' as *;
+
+/*------------------------Start Header------------------------*/
+
+@media(max-width:1200px) {
+  .header__logo-social-header {
+    margin: 0px 20px 0px 0px;
+  
+    >*:not(:last-child) {
+      margin: 0px 8px 0px 0px;
+    } 
+  }
+
+  .header__menu{
+    >*:not(:last-child) {
+      margin: 0px 20px 0px 0px;
+    }
+  }
+}
+
+@media(max-width: 998px) {
+  .navbar-nav {
+    >*:not(:last-child) {
+      margin: 0px 35px 0px 0px;
+    }
+  }
+}
+
+@media(max-width: 991px) {
+  .header__contact {
+    display: none;
+  }
+}
+
+/*------------------------End Header------------------------*/
+
+
+
+/*------------------------Start Main-secion-1------------------------*/
+
+@media(max-width: 1850px) {
+  .main__section-1{
+    padding: 0px 60px;
+  }
+}
+
+@media(max-width: 1440px) {
+  .main__section-1{
+    padding: 0px 20px;
+  }
+  .car-group__china {
+    @include size-img(320px, 268px);
+    position: absolute;
+    z-index: 0;
+    bottom: 120px;
+    right: 361px;
+  }
+  .car-group__kia {
+    @include size-img(318px, 268px);
+    position: absolute;
+    z-index: 1;
+    bottom: 80px;
+    right: 150px;
+  }
+  .car-group__honda {
+    @include size-img(360px, 268px);
+    position: absolute;
+    z-index: 0;
+    bottom: 91px;
+    right: -59px;
+  }
+  .trio__container{
+    padding: 60px 50px;
+  }
+  .trio__triangle {
+    &::after{
+      content: "\a";
+      border-style: solid;
+      border-width: 165px 611px 160px 0;
+      border-color: transparent #EB1C24 transparent transparent;
+      position: absolute;
+      bottom: 34px;
+      right: 0px;
+    }
+  }
+  .block-text_trio {
+    >*:not(:last-child) {
+      margin: 0px 0px 16px 0px;
+    }
+  }
+  .block-text__title_trio {
+    font-weight: 800;
+    font-size: 35px;
+    max-width: 463px;
+  }
+  .block-text__subtitle_trio {
+    font-weight: 400;
+    font-size: 19px;
+    max-width: 473px;
+  }
+  .general-button_trio {
+    padding: 20px 28px;
+  }
+}
+
+@media(max-width: 1168px) {
+  .trio__triangle {
+    &::after{
+      display: none;
+    }
+  }
+  .trio__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 50px 200px 50px;
+  }
+  .block-text_trio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .trio__car {
+    position: relative;
+  }
+  .car-group__china {
+    @include size-img(249px, 192px);
+    bottom: -218px;
+    right: 28px;
+  }
+  .car-group__kia {
+    @include size-img(249px, 192px);
+    bottom: -242px;
+    right: -129px;
+  }
+  .car-group__honda {
+    @include size-img(249px, 192px);
+    bottom: -222px;
+    right: -267px;
+  }
+}
+
+@media(max-width: 768px) {
+  .main__section-1{
+    padding: 0px 20px;
+    margin: 0px 0px 80px 0px;
+  }
+  .trio__container {
+    padding: 24px 24px 100px 24px;
+  }
+  .car-group__china {
+    @include size-img(176px, 149px);
+    bottom: -126px;
+    right: 15px;
+  }
+  .car-group__kia {
+    @include size-img(208px, 144px);
+    bottom: -155px;
+    right: -88px;
+  }
+  .car-group__honda {
+    @include size-img(171px, 180px);
+    bottom: -127px;
+    right: -180px;
+  }
+}
+
+@media(max-width:546px) {
+
+  .block-text__title_trio {
+    @include font-ws(800, 18px);
+    max-width: 220px;
+  }
+  .block-text__subtitle_trio {
+    @include font-ws(400, 14px);
+    max-width: 224px;
+  }
+  .general-button_trio {
+    padding: 12px 48px;
+    @include font-ws(800, 12px);
+  }
+  
+}
+
+/*------------------------End Main-secion-1------------------------*/
+
+/*------------------------End Main-secion-2------------------------*/
+
+@media(max-width:1046px) {
+  
+  .car-japan {
+    ._container {
+      padding: 0px 75px
+    }
+  }
+
+  .general-button_car-japan {
+    align-items: start;;
+    button {
+      color: #000000;
+    }
+  
+    >*:not(:last-child) {
+      margin: 0px 16px 0px 0px;
+    }
+
+    .general-button__car-japan {
+      display: none
+    }
+  }
+
+  .block-text__title_car-japan {
+    @include font-ws(800, 18px);
+    line-height: auto;
+    letter-spacing: 0px;
+  }
+  
+  .block-text__subtitle {
+    @include font-ws(400, 16px);
+    line-height: 150%;
+    letter-spacing: 0px;
+    max-width: 328px;
+  }
+
+  .block-text_car-japan {
+    >*:not(:last-child) {
+      margin: 0px 0px 8px 0px;
+    }
+  }
+}
+
+@media(max-width:903px) {
+  .flex__container {
+    .car-japan__row-car {
+      >*:not(:last-child) {
+        margin: 0px 8px 0px 0px;
+      }
+  
+      .car-japan__car-flex-col {
+    
+        >* {
+          margin: 0px 3px 8px 0px;
+        }
+      }
+    }
+  }
+  
+  .card-product__padding {
+    padding: 0px 12px 12px 12px;
+  }
+
+  .card-product {
+    padding: 0px;
+    align-items: normal;
+    justify-content: unset;
+    max-width: 100%;
+  }
+
+  .card-product__img {
+    @include size-img(100%, 120px);
+    
+  }
+
+  .card-product__price {
+    @include font-ws(700, 16px);
+    max-width: 100%;
+    line-height: auto;
+  }
+
+  .block-text__title_card-product {
+    @include font-ws(700, 14px);
+    max-width: 136px;
+    line-height: auto;
+    letter-spacing: 0px;
+  }
+
+  .block-text__subtitle_card-product {
+    @include font-ws(400, 12px);
+    max-width: 136px;
+    line-height: auto;
+    letter-spacing: 0px;
+  }
+
+  
+
+  .general-button_card-product {
+    display: none;
+  }
+}
+
+@media(max-width:768px){
+  .car-japan {
+    ._container {
+      padding: 0px 16px
+    }
+  } 
+  .general-button_car-japan-bottom-side {
+    @include font-ws(700, 10px);
+    letter-spacing: 0%;
+    line-height: auto;
+    padding: 12px 107px;
+
+  }
+
+  .main__section-2 {
+    margin: 0px 0px 40px 0px;
+  }
+}
+
+/*------------------------End Main-secion-2------------------------*/
+
+/*------------------------End Main-secion-3------------------------*/
+
+@media(max-width: 1828px) {
+  .block-text_car-china-and-korea{
+    margin: 0px 0px 20px 0px;
+  }
+}
+
+@media(max-width: 1406px) {
+  .car-china-and-korea__bottom-side {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    >*:not(:last-child) {
+      margin: 0px 0px 16px 0px;
+    }
+  }
+
+  
+}
+
+@media(max-width:768px) {
+  .main__section-3 {
+    margin: 0px 0px 40px 0px;
+
+    ._container {
+      padding: 0px 16px;
+    }
+  }
+}
+ 
+/*------------------------End Main-secion-3------------------------*/
+
+
+/*------------------------Start Main-section-4------------------------*/
+
+@media(max-width: 1515px) {
+  .main__section-4 {
+    margin: 0px 0px 60px 0px;
+  }
+
+  .block-text__title_about-us{
+    @include font-ws(800, 24px);
+    line-height: auto;
+    letter-spacing: 0px;
+    color: #ffffff;
+  }
+
+  .block-text__subtitle_about-us {
+    @include font-ws(400, 16px);
+    max-width: 100%;
+    line-height: 150%;
+    letter-spacing: 0px;
+    color: #ffffff;
+  }
+  .about-us__top-side {
+    padding: 60px 30px 132px 30px;
+  }
+
+  .flex__container {
+    flex-wrap: wrap;
+  }
+  
+  .about-us__about-flex-col {
+    flex-direction: column;
+    >*:not(:last-child) {
+      margin: 0px 12px 0px 0px;
+    }
+  }
+
+  .graphic-info__subtitle {
+    max-width: 128px;
+  }
+
+  .about-us__graphic-info-1 {
+    display: none;
+  }
+}
+
+@media(max-width: 1249px) {
+  .about-us {
+    ._container {
+      padding: 0px;
+    }
+  }
+  .about-us__top-side {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .about-us__icon-autocenter {
+    margin: 0px 0px 24px 0px;
+  }
+
+  .block-text_about-us {
+    padding: 0px 10px ;
+  }
+
+  .general-button_about-us {
+    padding: 12px 72px;
+    @include font-ws(700, 10px);
+  }
+
+  .general-button__about-us {
+
+    @include font-ws(700, 10px);
+  }
+}
+
+
+@media(max-width: 789px) {
+  .about-us__bottom-side {
+    margin: -127px 0px 0px 0px;
+    padding: 24px 10px;
+  }
+}
+
+/*------------------------End Main-section-4------------------------*/
+
+/*------------------------Start Main-section-5------------------------*/
+
+@media(max-width: 911px) {
+  .carousel-control-next,
+  .carousel-control-prev-icon {
+    display: none;
+  }  
+}
+
+@media(max-width: 763px) {
+
+  .main__section-5 {
+    margin: 0px 0px 40px 0px;
+  }
+
+  .reviews {
+    ._container {
+      padding: 0px 16px;
+    }
+  }
+
+  .reviews__top-side {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+  
+    margin: 0px 0px 24px 0px;
+  }
+  
+  .reviews__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px 8px 0px;
+  
+    @include font-ws(800, 18px);
+    letter-spacing: 0px;
+    line-height: auto;
+  
+    > p{
+    @include font-ws(400, 18px);
+    color: #757575;
+    margin: 0px 0px 0px 8px;
+    letter-spacing: 0px;
+    line-height: auto;
+    }
+  }
+  
+  .reviews__grade {
+    display: flex;
+    align-items: center;
+    @include font-ws(800, 18px);
+    letter-spacing: 0px;
+    line-height: auto;
+  
+    > p {
+      margin: 0px 8px 0px 0px;
+      align-items: center;
+    }
+  }
+}
+
+/*------------------------End Main-section-5------------------------*/
+
+/*------------------------Start Main-section-6------------------------*/
+
+@media(max-width:1335px) {
+  .block-text__title_contact-information {
+    @include font-ws(800, 20px);
+  }
+  
+  .block-text__subtitle_contact-information {
+    @include font-ws(400, 16px);
+    max-width: 328px;
+  }
+  
+  .contact-information__bottom-side {
+    display: flex;
+    align-items: center;
+  
+    >*:not(:last-child) {
+      margin: 0px 64px 0px 0px;
+    }
+  }
+
+  .contact-information__container {
+    padding: 60px 16px 60px 16px;
+  }
+
+  .form-feedback {
+    right: 30px;
+  }
+}
+
+@media(max-width: 1172px) {
+  .contact-information__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }  
+  .contact-information__top-side {
+    margin: 0px 0px 24px 0px;
+  }
+  .contact-information__container {
+    padding: 24px 16px 486px 16px;
+  }
+
+  .form-feedback {
+    right: -238px;
+    bottom: -528px;
+  }
+  .contact-information_contact-form-container {
+    position: relative;
+  }
+
+  @media(max-width: 543px) {
+    .contact-information__bottom-side {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+    
+      >*:not(:last-child) {
+        margin: 0px 0px 0px 0px;
+      }
+    }
+  }
+  .contact-information-bottom-side__left-side {
+    margin: 0px 0px 24px 0px ;
+
+    >*:not(:last-child) {
+      margin: 0px 0px 16px 0px;
+    }
+  }
+
+  .contact-information-bottom-side {
+    >*:not(:last-child) {
+      margin: 0px 24px 24px 0px;
+    }
+  }
+  .contact-information-bottom-side__right-side {
+    >*:not(:last-child) {
+      margin: 0px 0px 20px 0px;
+    }
+  }
+
+  .form-feedback {
+    padding: 24px 16px;
+    right: -134px;
+    bottom: -583px;
+  }
+
+  .form-feedback__row-inside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    >*:not(:last-child){
+      margin: 0px 0px 16px 0px;
+    }
+  }
+
+  .contact-information__container {
+    padding: 24px 16px 562px 16px;
+  }
+
+  .form-feedback__title {
+    @include font-ws(800, 18px);
+  }
+}
+
+
+/*------------------------End Main-section-6------------------------*/
+
+/*------------------------Start Footer------------------------*/
+
+@media(max-width: 768px) {
+
+  .footer{
+    ._container {
+      padding: 0px 16px;
+    }
+  }
+
+  .footer__main-logo {
+    display: none;
+  }
+
+  .footer__bottom-side {
+    flex-direction: column-reverse;
+    align-items: start;
+  }
+  .footer__contact {
+    flex-direction: column-reverse;
+    align-items: start;
+
+    >* {
+      margin: 0px 0px 24px 0px;
+    }
+  }
+
+  .footer__top-side {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .footer__right-side {
+    flex-direction: column;
+    align-items: start;
+
+    >*:not(:last-child) {
+      margin: 0px 0px 24px 0px;
+    }
+  }
+
+  .footer__left-side {
+    margin: 0px 0px 24px 0px;
+  }
+}
+
+/*------------------------End Footer------------------------*/

@@ -1,0 +1,14 @@
+@mixin font-ws($font-w, $font-s) {
+    font-weight: $font-w;
+    font-size: $font-s;
+}
+
+@mixin flex-col($padd-l, $padd-r, $grow, $shrink, $basis) {
+    padding: $padd-l $padd-r;
+    flex: $grow $shrink $basis;
+}
+
+@mixin size-img ($mw, $mh) {
+    max-width: $mw;
+    max-height: $mh;
+}

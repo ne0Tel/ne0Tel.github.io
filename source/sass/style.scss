@@ -1,0 +1,1170 @@
+@use './modules/redefinition';
+// -------
+@use './modules/rebot';
+@use './modules/service-value';
+@use './modules/mix' as *;
+
+
+
+/*------------------------Start Repeated Blocks------------------------*/
+
+.block-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  >*:not(:last-child) {
+    margin: 0px 0px 16px 0px;
+  }   
+}
+
+.block-text__title{
+  @include font-ws(800, 32px);
+}
+
+.block-text__subtitle {
+  @include font-ws(400, 18px);
+  color: #757575;
+}
+
+.general-button {
+  @include font-ws(700, 18px);
+  padding: 24px 32px;
+  background-color: #EB1C24;
+  border-radius: 15px;
+  button {
+    color: #ffff;
+  }
+}
+
+.card-product {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  flex: 0 0 auto;
+  padding: 20px;
+  background-color: #F8F8F8;
+  border-radius: 20px;
+}
+
+.card-product__price {
+  @include font-ws(700, 18px);
+  line-height: auto;
+}
+
+.card-product__img {
+  @include size-img(505px, 305px);
+  border-radius: 20px;
+  margin: 0px 0px 24px 0px;
+}
+
+.form-feedback {
+  background-color: #ffff;
+  padding: 40px;
+  border-radius: 10px 10px 0px 0px;
+  position: absolute;
+  bottom: -1px;
+  right: 60px;
+
+  >*:not(:last-child) {
+    margin: 0px 0px 24px 0px;
+  }
+}
+
+
+.form-feedback__col-inside {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+
+  input {
+    background-color: #F8F8F8;
+  }
+
+  textarea {
+    background-color: #F8F8F8;
+  }
+}
+
+.form-feedback__row-inside {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-feedback__form-textarea{
+  width: 100%;
+  padding: 16px;
+  border-radius: 10px;
+}
+
+.form-feedback__form-check {
+  display: flex;
+}
+
+
+.from-feedback__button-feedback {
+  @include font-ws(700, 18px);
+  line-height: auto;
+  letter-spacing: 0px;
+  padding: 24px 68px;
+  color: #000000;
+  background-color: #F8F8F8;
+  border-radius: 15px;
+}
+
+.form-feedback__form-check-label {
+  @include font-ws(400, 14px);
+  line-height: 150%;
+  letter-spacing: 0px;
+}
+
+.form-feedback__form-label {
+  @include font-ws(400, 14px);
+  line-height: auto;
+  letter-spacing: 0px;
+}
+
+.form-feedback__title {
+  @include font-ws(800, 24px);
+  line-height: auto;
+  letter-spacing: 0px
+}
+/*------------------------End Repeated Blocks------------------------*/
+
+/*------------------------Start Header------------------------*/
+.block-text_header {
+  >*:not(:last-child) {
+    margin: 0px 0px 4px 0px;
+  }   
+}
+
+.block-text__title_header {
+  @include font-ws(800, 18px);
+  letter-spacing: 0px;
+}
+
+.block-text__subtitle_header {
+  @include font-ws(400, 14px);
+  letter-spacing: 0px;
+  color: #757575;
+}
+
+.header {
+}
+
+.header__container {
+  padding: 16px 16px 48px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo-cont {
+}
+
+.header__logo {
+  @include size-img(97px, 70px);
+
+  
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+
+  >*:not(:last-child) {
+    margin: 0px 40px 0px 0px;
+  }  
+}
+.menu {
+}
+
+.menu__link {
+  @include font-ws(400, 16px);
+
+  &:hover {
+    color: red;
+  }
+}
+
+.header__logo-social-header {
+  margin: 0px 40px 0px 0px;
+
+  >*:not(:last-child) {
+    margin: 0px 16px 0px 0px;
+  } 
+
+  >* {
+    color: #B8B8B8;
+
+    &:hover {
+      color: #888888;
+    }
+  }
+}
+
+.logo-social-header {
+}
+
+.logo-social-header__telegram {
+}
+
+.logo-social-header__whatsapp {
+}
+
+.header__contact{
+  display: flex;
+  align-items: center;
+}
+
+.block-text {
+}
+
+.block-text_header {
+}
+
+.block-text__title {
+}
+
+.block-text__title_header {
+}
+
+.block-text__subtitle {
+}
+
+.block-text__subtitle_header {
+}
+
+/*------------------------End Header------------------------*/
+
+/*------------------------Start Main-section-1------------------------*/
+
+.main__section-1 {
+  padding: 0px 120px;
+  margin: 0px 0px 130px 0px;
+}
+
+.trio {
+}
+
+.trio__container {
+  padding: 120px 100px;
+  background-color: #191919;
+  border-radius: 35px;
+  display: flex;
+  align-items: start;
+  position: relative;
+}
+
+.trio__triangle {
+  &::after{
+    content: "\a";
+    border-style: solid;
+    border-width: 235px 682px 194px 0;
+    border-color: transparent #EB1C24 transparent transparent;
+    position: absolute;
+    bottom: 30px;
+    right: 0px;
+  }
+}
+
+.block-text {
+}
+
+.block-text_trio {
+  display: flex;
+  align-items: start;
+  >*:not(:last-child) {
+    margin: 0px 0px 32px 0px;
+  } 
+}
+
+.block-text__title_trio {
+  @include font-ws(800, 44px);
+  max-width: 603px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  color: white;
+}
+
+.block-text__subtitle_trio {
+  @include font-ws(400, 24px);
+  max-width: 563px;
+  line-height: 150%;
+  letter-spacing: 0px;
+}
+
+.trio__car {
+}
+
+.general-button_trio {
+  margin: 28px 0px 0px 0px;
+}
+
+.general-button__trio {
+}
+
+.car-group {
+}
+.car-group__china {
+  @include size-img(481px, 402px);
+  position: absolute;
+  z-index: 0;
+  bottom: 112px;
+  right: 320px;
+}
+.car-group__kia {
+  @include size-img(477px, 402px);
+  position: absolute;
+  z-index: 1;
+  bottom: 68px;
+  right: 98px;
+}
+.car-group__honda {
+  @include size-img(540px, 402px);
+  position: absolute;
+  z-index: 0;
+  bottom: 76px;
+  right: -115px;
+}
+
+/*------------------------End Main-section-1------------------------*/
+
+/*------------------------Start Main-section-2------------------------*/
+
+.main__section-2 {
+  margin: 0px 0px 120px 0px;
+}
+
+.car-japan {
+}
+
+._container {
+  .car-japan__container {
+
+  }
+}
+
+.car-japan__top-side {
+  display: flex;
+  flex-direction: row;
+  justify-content:  space-between;
+
+  margin: 0px 0px 32px 0px;
+}
+
+.block-text_car-japan {
+  display: flex;
+  align-items: start;
+}
+
+.block-text__title {
+}
+
+.block-text__title_car-japan {
+}
+
+.block-text__subtitle {
+}
+
+.block-text__subtitle_car-japan {
+}
+
+.general-button__car-japan {
+}
+
+.general-button_car-japan {
+  @include font-ws(400, 18px);
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  padding: 0px;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 15px;
+  line-height: 150%;
+  button {
+    color: #000000;
+  }
+
+  >*:not(:last-child) {
+    margin: 0px 16px 0px 0px;
+  }
+}
+
+.car-japan__bottom-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 0px 32px 0px;
+
+  >*:not(:last-child) {
+    margin: 0px 0px 12px 0px;
+  }
+}
+
+.flex__container-car {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  .car-japan__row-car {
+    >*:not(:last-child) {
+      margin: 0px 12px 0px 0px;
+    }
+
+    .car-japan__car-flex-col {
+  
+      >* {
+        margin: 0px 3px 12px 0px;
+      }
+    }
+  }
+}
+.flex__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .car-japan__row-car {
+    >*:not(:last-child) {
+      margin: 0px 12px 0px 0px;
+    }
+
+    .car-japan__car-flex-col {
+  
+      >* {
+        margin: 0px 3px 12px 0px;
+      }
+    }
+  }
+}
+
+.car-japan__car-flex-col {
+  display: flex;
+}
+
+
+
+.block-text_card-product {
+  display: flex;
+  align-items: start; 
+  margin: 0px 0px 12px 0px;
+
+  >*:not(:last-child) {
+    margin: 0px 0px 12px 0px;
+  }
+}
+
+.block-text__title_card-product {
+  @include font-ws(700, 24px);
+  max-width: 371px;
+  line-height: auto;
+  letter-spacing: 0px;
+}
+
+.block-text__subtitle_card-product {
+  @include font-ws(400, 16px);
+  max-width: 371px;
+  line-height: auto;
+  letter-spacing: 0px;
+}
+
+.card-product__bottom-side {
+  display: flex;
+  align-items: center;
+  >*:not(:last-child) {
+    margin: 0px 108px 0px 0px;
+  }
+}
+
+.general-button_card-product {
+  @include font-ws(700, 14px);
+  line-height: auto;
+  letter-spacing: 0px;
+  padding: 12px 20px;
+  background-color: #303030;
+  border-radius: 10px;
+
+  &:hover {
+    background-color: #EB1C24;
+  }
+}
+
+.general-button__card-product {
+}
+
+.general-button_car-japan-bottom-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include font-ws(700, 18px);
+  line-height: auto;
+  letter-spacing: 0px;
+  padding: 24px 85.6px;
+  background-color: #303030;
+  border-radius: 10px;
+  margin: 0 auto;
+
+  &:hover {
+    background-color: #EB1C24;
+  }
+}
+
+._car-japan-container {
+  display: flex;
+  justify-content: center;
+}
+
+.general-button__car-japan-bottom-side {
+}
+/*------------------------End Main-section-2------------------------*/
+
+/*------------------------Start Main-section-3------------------------*/
+.main__section-3 {
+  margin: 0px 0px 120px 0px;
+}
+
+.car-china-and-korea {
+}
+
+.car-china-and-korea__container {
+}
+
+.block-text_car-china-and-korea-2 {
+  display: flex;
+  align-items: start;
+  margin: 0px 0px 32px 0px;
+
+  >*:not(:last-child) {
+    margin: 0px 0px 16px 0px;
+  }
+}
+
+.block-text__title_car-china-and-korea-2 {
+  max-width: 100%;
+}
+
+
+.block-text__subtitle_car-china-and-korea-2 {
+  max-width: 100%;
+}
+
+.car-china-and-korea__bottom-side {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  >*:not(:last-child) {
+    margin: 0px 12px 0px 0px;
+  }
+}
+
+
+.block-text_car-china-and-korea {
+  display: flex;
+  align-items: start;
+  margin: 0px 0px 87px 0px;
+}
+
+.block-text__title_car-china-and-korea {
+  color: #ffff;
+}
+
+.block-text__subtitle_car-china-and-korea {
+  color: #ffff;
+}
+
+.general-button {
+}
+
+.general-button_china-and-korea {
+  @include font-ws(700, 14px);
+  line-height: auto;
+  letter-spacing: 0px;
+  padding: 12px 20px;
+  background-color: #616161;
+  border-radius: 10px;
+
+  &:hover {
+    background-color: #909090;
+  }
+}
+
+.general-button__china-and-korea {
+}
+
+.car-china-and-korea__left-background {
+  
+}
+.car-china-and-korea__right-side {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  padding: 40px;
+  width: 100%;
+  height: 100%;
+  background-image:url(../img/china-and-korea/Dahatsh.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.car-china-and-korea__left-side{
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  padding: 40px;
+
+  width: 100%;
+  height: 100%;
+  background-image:url(../img/china-and-korea/Honda.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/*------------------------End Main-section-3------------------------*/
+
+
+/*------------------------Start Main-section-4------------------------*/
+
+.main__section-4 {
+  margin: 0px 0px 60px 0px;
+}
+
+.about-us {
+}
+
+.about-us__container {
+  position: relative;
+}
+
+.about-us__about-flex-col {
+  display: flex;
+}
+
+.about-us__top-side {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  max-height: 100%;
+  padding: 60px 120px 132px 120px;
+
+  background-image:url(../img/about-us/image-28.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+.block-text_about-us {
+  display: flex;
+  align-items: start;
+}
+
+.block-text__title_about-us {
+  @include font-ws(800, 32px);
+  line-height: auto;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+
+.block-text__subtitle_about-us {
+  @include font-ws(400, 18px);
+  max-width: 949px;
+  line-height: 150%;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+
+.about-us__icon-autocenter {
+}
+
+.about-us__bottom-side {
+  align-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 20px;
+  margin: -106px 140px 40px 140px;
+  background-color: #ffff;
+  max-width: 1400px;
+  border-radius: 10px;
+  box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.1);
+
+  >*:not(:last-child) {
+    margin: 0px 20px 0px 0px; 
+  }
+}
+
+.about-us__graphic-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.graphic-info {
+}
+
+.graphic-info__icon-info {
+  @include size-img(40px, 40px);
+}
+
+.graphic-info__subtitle {
+  @include font-ws(400, 14px);
+  text-align: center;
+  letter-spacing: 0px;
+  color: #000000;
+}
+
+.general-button_about-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 46.5px;
+}
+
+.general-button__about-us {
+  @include font-ws(700, 18px);
+  letter-spacing: 0px;
+  line-height: auto;
+}
+
+/*------------------------End Main-section-4------------------------*/
+
+
+/*------------------------Start Main-section-5------------------------*/
+
+.main__section-5 {
+  margin: 0px 0px 120px 0px;
+}
+
+.reviews__top-side {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+
+  margin: 0px 0px 24px 0px;
+}
+
+.reviews__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 0px 16px 0px;
+
+  @include font-ws(800, 32px);
+  letter-spacing: 0px;
+  line-height: auto;
+
+  > p{
+  @include font-ws(400, 32px);
+  color: #757575;
+  margin: 0px 0px 0px 12px;
+  letter-spacing: 0px;
+  line-height: auto;
+  }
+}
+
+.reviews__grade {
+  display: flex;
+  align-items: center;
+  @include font-ws(800, 32px);
+  letter-spacing: 0px;
+  line-height: auto;
+
+  > p {
+    margin: 0px 8px 0px 0px;
+    align-items: center;
+  }
+}
+
+.grage-star {
+  display: flex;
+  align-items: center;
+
+  >*:not(:last-child) {
+    margin: 0px 4px 0px 0px;
+  }
+}
+
+.star__img {
+  @include size-img(20px, 20px);
+}
+
+.reviews__bottom-side {
+  display: flex;
+  flex-direction: column;
+  >*:not(:last-child) {
+    margin: 0px 0px 12px 0px;
+  }
+}
+
+.card-reviews {
+  padding: 16px;
+  border-radius: 10px;
+  background-color: #F8F8F8;
+}
+
+.card-reviews__top-side {
+  display: flex;
+  align-items: start;
+}
+
+.card-reviwes__top-side-bottom-side {
+
+}
+
+.card-reviews__user {
+  margin: 0px 16px 0px 0px;
+}
+
+.card-reviews__user-name {
+  margin: 0px 0px 4px 0px;
+  @include font-ws(700, 16px);
+  letter-spacing: 0px;
+  line-height: auto;
+}
+
+.reviews__grade-user {
+  margin: 0px 0px 10px 0px;
+}
+
+.card-reviews__bottom-side {
+}
+
+.card-reviews__text-reviews {
+  @include font-ws(400, 14px);
+  letter-spacing: 0px;
+  line-height: 150%;
+  margin: 0px 0px 10px 0px;
+  max-width: 440px;
+  color: #191919;
+}
+
+.card-reviews__date-public {
+  @include font-ws(400, 14px);
+  letter-spacing: 0px;
+  line-height: 150%;
+  color: #757575;
+}
+
+.reviews__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  >*:not(:last-child) {
+    margin: 0px 12px 0px 0px;
+  }
+}
+
+/*------------------------End Main-section-5------------------------*/
+
+
+/*------------------------Start Main-section-6------------------------*/
+
+.main__section-6 {
+  margin: 0px 0px 60px 0px;
+}
+
+.contact-information {
+}
+
+.contact-information__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+  background-color: #191919;
+  border-radius: 35px;
+  position: relative;
+}
+
+.contact-information__top-side {
+  margin: 0px 0px 126px 0px;
+}
+
+.block-text_contact-information {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.block-text__title_contact-information {
+  @include font-ws(800, 32px);
+  letter-spacing: 0px;
+  line-height: auto;
+  color: #ffff;
+}
+
+.block-text__subtitle_contact-information {
+  @include font-ws(400, 16px);
+  letter-spacing: 0px;
+  line-height: auto;
+  color: #757575;
+}
+
+.contact-information__bottom-side {
+  display: flex;
+  align-items: center;
+
+  >*:not(:last-child) {
+    margin: 0px 64px 0px 0px;
+  }
+}
+
+.contact-information-bottom-side {
+}
+
+.contact-information-bottom-side__left-side {
+  >*:not(:last-child) {
+    margin: 0px 0px 28px 0px;
+  }
+}
+
+.block-text_contact-information-bottom-side {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
+  >*:not(:last-child) {
+    margin: 0px 0px 8px 0px;
+  }
+}
+
+.block-text__contact-information-bottom-side {
+  @include font-ws(400, 14px);
+  letter-spacing: 0px;
+  line-height: auto;
+  color: #757575;
+}
+
+.block-text__subtitle_contact-information-bottom-side {
+  @include font-ws(700, 16px);
+  letter-spacing:-4%;
+  line-height: auto;
+  color: #F3F3F3;
+}
+
+.contact-information-bottom-side__right-side {
+  >*:not(:last-child) {
+    margin: 0px 0px 34px 0px;
+  }
+}
+
+.contact-information__user-service {
+  display: flex;
+  align-items: center;
+
+  >*:not(:last-child) {
+    margin: 0px 12px 0px 0px;
+  }
+
+  > a {
+    cursor: pointer;
+  }
+}
+
+.user-service {
+}
+
+.user-service__img {
+}
+
+.user-sevice__text {
+  @include font-ws(400, 16px);
+  letter-spacing:-4%;
+  line-height: auto;
+  color: #F3F3F3;
+
+  &:hover {
+    color: #EB1C24;
+  }
+}
+
+.carousel-item__container {
+  >*:not(:last-child) {
+    margin: 0px 0px 12px 0px;
+  }
+}
+
+/*------------------------End Main-section-6------------------------*/
+
+
+/*------------------------Start Footer------------------------*/
+
+.footer {
+  background-color: #191919;
+  padding: 40px 0px 24px 0px;
+}
+
+.footer__top-side {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 0px 40px 0px;
+
+}
+
+.footer__right-side {
+  display: flex;
+
+  >*:not(:last-child) {
+    margin: 0px 60px 0px 0px;
+  }
+}
+
+.footer__left-side-block {
+  display: flex;
+  flex-direction: column;
+
+  >*:not(:last-child) {
+    margin: 0px 0px 12px 0px;
+  }
+}
+
+.footer__link-right-side {
+  @include font-ws(400, 14px);
+  letter-spacing: 0px;
+  line-height: auto;
+  color: #F3F3F3;
+
+  &:hover {
+    color: #EB1C24;
+  }
+}
+
+.footer__main-logo {
+}
+
+.footer__left-side {
+  display: flex;
+  align-items: center;
+
+  >*:not(:last-child) {
+    margin: 0px 60px 0px 0px;
+  }
+}
+
+.footer__title-right-side {
+  @include font-ws(700, 16px);
+  letter-spacing: 0px;
+  line-height: auto;
+  color: #F3F3F3;
+
+}
+
+.footer__title-left-side {
+}
+
+.footer__right-side-block {
+
+  >* {
+    margin: 0px 0px 12px 0px;
+  }
+
+  > a {
+    margin: 0px 12px 0px 0px;
+
+    &:last-child {
+      margin: 0px 0px 0px 0px;
+    }
+    
+    @include font-ws(400, 14px);
+    letter-spacing: 0px;
+    line-height: auto;
+    color: #757575;
+    
+    &:hover {
+      color: #EB1C24;
+    }
+  }
+
+  max-width: 263px;
+}
+
+.footer__bottom-side {
+  margin: 24px 0px 0px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__line {
+  width: 100%;
+  height: 2px;
+  color: #707070;
+}
+
+.footer__copyrigth {
+  >*:not(:last-child) {
+    margin: 0px 0px 12px 0px;
+  }
+}
+
+.copyrigth {
+}
+
+.copyrigth__title {
+  @include font-ws(400, 14px);
+  letter-spacing: 0px;
+  line-height: auto;
+  color: #F3F3F3;
+}
+
+.copyrigth__subtitle {
+  @include font-ws(400, 14px);
+  letter-spacing: 0px;
+  line-height: auto;
+  color: #757575;
+}
+
+.footer__contact {
+  display: flex;
+  align-items: center;
+}
+
+.footer__contact-icon {
+  >*:not(:last-child) {
+    margin: 0px 16px 0px 0px;
+  }
+  >* {
+    color: #9C9C9C;
+    &:hover {
+      color: #ffffff;
+    }
+  }
+}
+
+.footer-icon {
+  margin: 0px 40px 0px 0px;
+}
+
+.footer__footer-icon {
+}
+
+.footer__contact-text {
+  >*:not(:last-child) {
+    margin: 0px 0px 4px 0px;
+  }
+}
+
+.footer__contact-text-title {
+  @include font-ws(700, 18px);
+  letter-spacing: 0px;
+  line-height: auto;
+  color: #F3F3F3;
+}
+
+.footer__contact-text-subtitle {
+  @include font-ws(400, 14px);
+  letter-spacing: 0px;
+  line-height: auto;
+  color: #757575;
+}
+/*------------------------End Footer------------------------*/
