@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Duty Calculation Template</title>
+</head>
+<body>
+  <form method="get" id="id_customs_calculator">
+
+    <div class="exporting-countries">
+
+      <label>Страна экспортёр</label>
+      <select class="dropdown-exporting-countries" name="exporting_country" id="id_exporting_country">
+
+        <option value="Japan">Япония</option>
+        <option value="China">Китай</option>
+        <option value="Korea">Корея</option>
+      </select>
+    </div>
+
+    <div class="price-currency">
+
+      <label>Стоимость в валюте</label>
+      <input class="input-price-currency" type="number" name="price_currency" id="id_price_currency" min="0" max="1000000000" step="1" required>
+    </div>
+
+    <div class="release-auto">
+
+      <label>Год выпуска</label>
+      <select class="dropdown-release-auto" name="year_release" id="id_year_release">
+
+        <option value="1">меньше 3-х лет</option>
+        <option value="3">3-5 лет</option>
+        <option value="5">больше 5 лет</option>
+      </select>
+    </div>
+
+    <div class="engine-volume">
+
+      <label>Объём двигателя</label>
+      <input class="input-engine-volume" type="number" name="engine_volume" id="id_engine_volume" min="0" max="90" step="1" required>
+    </div>
+
+    <div class="engine-power">
+
+      <label>Мощность двигателя</label>
+      <input class="input-engine-power" type="number" name="engine_power" id="id_engine_power" min="0" max="3000" step="1" required>
+    </div>
+
+    <div class="engine-type">
+
+      <label>Тип двигателя</label>
+      <select class="dropdown-engine-type" name="engine_type" id="id_engine_type">
+
+        <option value="petrol">Бензиновый</option>
+        <option value="electric">Электрический</option>
+        <option value="diesel">Дизельный</option>
+        <option value="p-electric">Бензиновый и электрический</option>
+        <option value="d-electric">Дизельный и электрический</option>
+      </select>
+    </div>
+
+    <div class="type-person">
+
+      <label>Кто вывозит?</label>
+      <select class="dropdown-type-person" name="type_person" id="id_type_person">
+
+        <option value="physical-person">Физическое лицо</option>
+        <option value="legal-person">Юридическое лицо</option>
+      </select>
+    </div>
+
+    <button class="count-cost" id="id_count_cost" type="submit">Рассчитать стоимость</button>
+  </form>
+
+  <div class="total" style="width:300px; height:100px; padding: 10px; margin-top: 10px; border: 1px solid red"></div>
+              
+  <script src="./index.js"></script>
+</body>
+</html>

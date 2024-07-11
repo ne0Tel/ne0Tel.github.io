@@ -1,0 +1,77 @@
+body {
+  background-color: #1B1B1B !important;
+}
+
+select {
+  color: #9F9F9F;
+  background-color: #464646;
+  padding: 12px 16px;
+  border-radius: 16px;
+  cursor: pointer;
+} 
+
+#delivery {
+  position: relative;
+
+  font-family: 'Stolzl Regular' !important;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.ship-calc {
+  position: absolute;
+  top: calc(50% - 90px);
+  left: calc(50% - 90px);
+
+  padding: 24px;
+  background-color: #282828;
+  border-radius: 12px;
+  box-shadow: 0px 4px 52px 0px #00000047;
+  color: #ffffff;
+
+  display: flex;
+  flex-direction: column;
+}
+.ship-calc > * {
+ margin-bottom: 24px;
+}
+.ship-calc > *:last-child {
+ margin-bottom: 0px;
+}
+
+.select-delivery-area {
+  display: flex;
+  flex-direction: column;
+}
+
+.select-delivery-area label {
+  margin-bottom: 12px;
+}
+
+.select-car-body-type {
+  display: flex;
+  flex-direction: column;
+}
+
+.select-car-body-type label {
+  margin-bottom: 12px;
+}
+
+.delivery_area {
+  background-color: #282828;
+  padding: 20px;
+}
+
+.delivery-time {
+  font-family: 'Stolzl Light' !important;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #9F9F9F;
+}
+
+.delivery-price {
+  font-family: "Helvetica Neue",sans-serif;
+}
